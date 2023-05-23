@@ -38,12 +38,11 @@ const Sell = () => {
             <section className="product-page">
                 <Container>
                      <Row className="justify-content-center">
-                        <Col md={14}>
-                        <div  className="d-flex flex-column align-items-center" style={{ border: "1px solid #17202A", padding: "50px",
-                                    borderRadius: "100px", }}>
+                        <Col md={7}>
+                        <div  className="d-flex flex-column align-items-center" style={{ border: "1px solid #17202A",padding: "50px", borderWidth: "1px"  }}>
                                 
                             <div className="d-flex flex-column align-items-center"> {/* Add a div with the "d-flex flex-column align-items-center" classes */}
-                                <h2 style={{ display: "inline-block",fontFamily:"Monsterrat" }}>Contribute to Our Marketplace</h2>
+                                <h2 style={{ display: "inline-block" , marginBottom: '20px' }}>Contribute to Our Marketplace</h2>
                                 <div className="info">
                                     <span>Category:</span>
                                     <select name="membership" id="membership">
@@ -52,13 +51,13 @@ const Sell = () => {
                                     </select>
                                 </div>
                                 <p style={{ fontWeight: "bold" }}>Type of Product:</p>
-                                <input type="text" style={{ width: "70%" , background: "#D6EAF8" }}/>
+                                <input type="text" style={{ width: "90%" , background: "#D6EAF8" }}/>
                                 <p style={{ fontWeight: "bold" }}>Listing Price: </p>
-                                <input type="text" style={{ width: "70%" , background: "#D6EAF8"  }}/>
+                                <input type="text" style={{ width: "90%" , background: "#D6EAF8"  }}/>
                                 <p style={{ fontWeight: "bold" }}>Quantity of Product:</p>
-                                <input type="text" style={{ width: "70%" , background: "#D6EAF8" }}/>
+                                <input type="text" style={{ width: "90%" , background: "#D6EAF8" }}/>
                                 <p style={{ fontWeight: "bold" }}>Date Listed:</p>
-                                <input type="text" style={{ width: "70%" , background: "#D6EAF8" }}/>
+                                <input type="text" style={{ width: "90%" , background: "#D6EAF8" }}/>
                                 <p style={{ fontWeight: "bold" }}>Attach Picture of Product:</p>
                                 <AttachmentSection /> {/* Add Attachment Section component here */}
                                 <button aria-label="Add" type="submit" className="add" onClick={() => handelAdd(selectedProduct, quantity)}>List Product</button>

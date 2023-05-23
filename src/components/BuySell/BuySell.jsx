@@ -9,9 +9,7 @@ const BuySell = () => {
       <section className='wrapper background'>
         <h1>Get Started!</h1>
         <Container>
-          
           <Row>
-            
           {buysellData.map((val, index) => {
             return (
               <Col md={5} sm={5} xs={9} style={{backgroundColor:val.bg}} className='feature' key={index}>

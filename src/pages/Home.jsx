@@ -9,9 +9,9 @@ import BuySell from "../components/BuySell/BuySell"
 import Issues from "../components/Info/Issues"
 
 const Home = () => {
-  const {addToCart} =useContext(DataContainer);
-  const newArrivalData = products.filter(item => item.category ==="mobile" || item.category ==="wireless");
-  const bestSales = products.filter(item => item.category ==="rice");
+  const {addToCart} =useContext(DataContainer); 
+  const newArrivalData = products.filter(item => item.category === "mobile" || item.category === "wireless");
+  const bestSales = products.filter(item => item.category === "rice");
   useEffect(()=> {
     window.scrollTo(0,0);
   },[])
